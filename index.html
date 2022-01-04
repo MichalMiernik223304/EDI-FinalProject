@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="layout.css" type="text/css">
+	<title>Cracow Stock Exchange</title>
+</head>
+<body>
+
+	<div>
+		<img src="logo.png" alt="logo" width="175" height="175">
+	</div>
+
+	<div id="name">
+		CSE
+	</div>
+
+	<div id="nameDescription">
+		Cracow Stock Exchange
+	</div>
+
+	<div>
+		<canvas id="line" width="1000" height="15" ></canvas>
+	</div>
+
+	<h1>
+		Bar graph
+	</h1>
+
+	<h1>
+		Line graph
+	</h1>
+
+
+
+
+
+	<script>
+		var c = document.getElementById("line");
+		var ctx = c.getContext("2d");
+		ctx.moveTo(0,0);
+		ctx.lineTo(1000,0);
+		ctx.strokeStyle = "#91c8e0";
+		ctx.lineWidth = 4;
+		ctx.stroke();
+	</script>
+</body>
+</html>
